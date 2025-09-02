@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+
     "dev:api": "nx serve apps/api"
   },
   "private": true,
