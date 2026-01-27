@@ -8,9 +8,19 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "outputs": []
+    },
     "dev": {
       "persistent": true,
       "cache": false
-    }
+    },
+    "clean": { "outputs": [] },
+    "check": { "outputs": [] }
   }
 }
