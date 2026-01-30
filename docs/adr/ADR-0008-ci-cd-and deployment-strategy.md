@@ -1,4 +1,4 @@
-# ADR-0010: CI/CD and Deployment Strategy
+# ADR-0008: CI/CD and Deployment Strategy
 
 ## Status
 Accepted

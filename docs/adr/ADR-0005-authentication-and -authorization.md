@@ -1,4 +1,4 @@
-# ADR-0006: Authentication and Authorization
+# ADR-0005: Authentication and Authorization
 
 ## Status
 Accepted

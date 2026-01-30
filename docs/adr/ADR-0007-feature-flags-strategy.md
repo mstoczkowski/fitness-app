@@ -1,4 +1,4 @@
-# ADR-0009: Feature Flags Strategy
+# ADR-0007: Feature Flags Strategy
 
 ## Status
 Accepted

@@ -1,4 +1,4 @@
-# ADR-0008: Observability and Monitoring
+# ADR-0006: Observability and Monitoring
 
 ## Status
 Accepted
