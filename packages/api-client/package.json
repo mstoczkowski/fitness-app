@@ -5,13 +5,14 @@
     "main": "./src/index.ts",
     "types": "./src/index.ts",
     "scripts": {
-      "generate": "openapi --input ../../services/api/openapi.json --output src/generated --client fetch",
+      "generate": "openapi-typescript ../../services/api/openapi.json --output src/generated/schema.ts",
       "lint": "biome check .",
       "typecheck": "tsc -p tsconfig.json --noEmit",
-      "clean": "rm -rf src/generated"
+      "clean": "rm -rf src/generated/schema.ts"
     },
     "devDependencies": {
-      "typescript": "^5.5.0"
+      "typescript": "^5.5.0",
+      "openapi-fetch": "^0.14.0"
     },
     "dependencies": {
       "@gym/api": "workspace:*"
