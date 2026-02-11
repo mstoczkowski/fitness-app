@@ -1,0 +1,17 @@
+{
+    "name": "@gym/api-client",
+    "private": true,
+    "version": "0.0.0",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "scripts": {
+      "generate": "npx @hey-api/openapi-ts -i http://127.0.0.1:8000/openapi.json -o src/generated",
+      "lint": "biome check .",
+      "typecheck": "tsc -p tsconfig.json --noEmit",
+      "clean": "rm -rf src/generated"
+    },
+    "devDependencies": {
+      "typescript": "^5.5.0"
+    }
+  }
+  
