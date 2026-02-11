@@ -14,7 +14,8 @@
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules .turbo",
-    "check": "turbo run check"
+    "check": "turbo run check",
+    "generate:types": "turbo run generate"
   },
   "keywords": [],
   "author": "",

@@ -5,13 +5,16 @@
     "main": "./src/index.ts",
     "types": "./src/index.ts",
     "scripts": {
-      "generate": "npx @hey-api/openapi-ts -i http://127.0.0.1:8000/openapi.json -o src/generated",
+      "generate": "openapi --input ../../services/api/openapi.json --output src/generated --client fetch",
       "lint": "biome check .",
       "typecheck": "tsc -p tsconfig.json --noEmit",
       "clean": "rm -rf src/generated"
     },
     "devDependencies": {
       "typescript": "^5.5.0"
+    },
+    "dependencies": {
+      "@gym/api": "workspace:*"
     }
   }
   

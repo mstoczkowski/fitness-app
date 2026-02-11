@@ -21,6 +21,13 @@
       "cache": false
     },
     "clean": { "outputs": [] },
-    "check": { "outputs": [] }
+    "check": { "outputs": [] },
+    "openapi:export": {
+      "outputs": ["openapi.json"]
+    },
+    "generate": {
+      "dependsOn": ["^openapi:export"],
+      "outputs": ["src/generated/**"]
+    }
   }
 }

@@ -6,7 +6,8 @@
       "lint": "uv run ruff check .",
       "typecheck": "uv run mypy .",
       "test": "uv run pytest -q",
-      "clean": "rm -rf .pytest_cache .mypy_cache .ruff_cache __pycache__"
+      "clean": "rm -rf .pytest_cache .mypy_cache .ruff_cache __pycache__",
+      "openapi:export": "uv run python -c \"import json; from app.main import app; print(json.dumps(app.openapi()))\" > openapi.json"
     }
   }
   
